@@ -1,0 +1,181 @@
+.hero {
+  min-height: 650px;
+  background: linear-gradient(135deg, #f0fdf4, #ffffff);
+  display: flex;
+  align-items: center;
+  padding: 70px 24px;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Hero Content */
+
+.heroBadge {
+  display: inline-block;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 9px 16px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #14532d;
+  margin-bottom: 22px;
+}
+
+.heroContent h1 span {
+  color: #16a34a;
+  display: block;
+}
+
+.heroContent > p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #64748b;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primaryButton {
+  background-color: #14532d;
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #166534;
+}
+
+.secondaryButton {
+  background-color: white;
+  color: #14532d;
+  border: 1px solid #14532d;
+}
+
+.secondaryButton:hover {
+  background-color: #dcfce7;
+}
+
+/* Hero Information */
+
+.heroInfo {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.heroInfo div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #475569;
+  font-size: 13px;
+}
+
+/* Hero Visual Cards */
+
+.heroVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.visualCard {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f1f5f9;
+}
+
+.visualCard svg {
+  color: #16a34a;
+  margin-bottom: 15px;
+}
+
+.visualCard h2 {
+  color: #14532d;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.visualCard p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .heroContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heroContent h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 30px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .heroInfo {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
